@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Skimia / js-stack</title>
+
+        <link rel="stylesheet" href="http://skimia.github.io/js-stack/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://skimia.github.io/js-stack/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://skimia.github.io/js-stack/css/highlight.tomorrow-night.css">
+        <link rel="stylesheet" href="http://skimia.github.io/js-stack/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://skimia.github.io/js-stack/">
+                Skimia / js-stack
+                <small class="hidden-xs hidden-sm">
+                    The Starter Project for Skimia Fusion
+                </small>
+            </a>
+
+                            <a href="https://github.com/skimia/js-stack">
+                    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+                </a>
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                                                    <p class="text-muted">
+                                Fusion Core
+                            </p>
+
+                            <ul class="nav nav-pills nav-stacked">
+                                                                    <li class="">
+                                        <a href="http://skimia.github.io/js-stack/docs/fusion-core/getting-started.html">
+                                            Getting started
+                                        </a>
+                                    </li>
+                                                            </ul>
+                                                    <p class="text-muted">
+                                Other topics
+                            </p>
+
+                            <ul class="nav nav-pills nav-stacked">
+                                                            </ul>
+                        
+                    </nav>
+
+                
+                <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h1 id="changelog">Changelog</h1>
+<h2 id="v0391">v0.3.91:</h2>
+<h4 id="bug-fixes">Bug fixes:</h4>
+<ul>
+<li>progress: declare module in directive</li>
+</ul>
+<h2 id="v0390">v0.3.90:</h2>
+<h4 id="new-features">New features:</h4>
+<ul>
+<li>fab: add progress attribute</li>
+<li>select: allow to have complex selected template</li>
+<li>fab: add fab directive</li>
+<li>switch: add switch directive</li>
+<li>radio button: add radio button directive</li>
+<li>checkbox: add checkbox directive</li>
+<li>button: add button directive</li>
+</ul>
+<h4 id="bug-fixes-1">Bug fixes:</h4>
+<ul>
+<li>select: fix bad interpolate on selected elements</li>
+<li>select: add the missing wrapper</li>
+<li>progress: refactor progress service / directive</li>
+<li>checkbox: fix unchecked checkbox color</li>
+<li>checkbox: init checkbox id in init function</li>
+<li>card: fix sass comments</li>
+<li>button: fix sass comment</li>
+<li>button: set border-radius on btn-type mixin</li>
+<li>notification: fix in/out animation</li>
+</ul>
+<h4 id="breaking-changes">Breaking changes:</h4>
+<ul>
+<li>When calling progress service / directive, color parameter must be a</li>
+<li>material design color 500 identifier (red, pink, etc.)</li>
+<li>Directive attributes must now be prefixed: type -&gt; lx-type, color -&gt;</li>
+<li>lx-color</li>
+<li>Theming color sass variables have change:</li>
+<li>$primary-color-1 -&gt; $primary</li>
+<li>$primary-color-2 -&gt; $primary-hue-1</li>
+<li>$primary-color-3 -&gt; $primary-hue-2</li>
+<li>$accent-color-1 -&gt; $accent</li>
+<li>$accent-color-2 -&gt; $accent-hue-2</li>
+<li>$accent-color-3 -&gt; $accent-hue-3</li>
+<li>Quarter, halve, double and quadruple functions are no more available.</li>
+</ul>
+<h2 id="v0383">v0.3.83:</h2>
+<h4 id="new-features-1">New features:</h4>
+<ul>
+<li>text field: add text field reset mixin</li>
+<li>dialog: add a parameter to skip before close</li>
+<li>dialog: allow to cancel a dialog closing</li>
+<li>notification: allow to display HTML</li>
+</ul>
+<h4 id="bug-fixes-2">Bug fixes:</h4>
+<ul>
+<li>dialog: fix jshint errors</li>
+<li>tooltip: don't destroy tooltip if undefined</li>
+</ul>
+<h2 id="v0382">v0.3.82:</h2>
+<h4 id="bug-fixes-3">Bug fixes:</h4>
+<ul>
+<li>lxDropdown: fix click event on mobile device</li>
+</ul>
+<h2 id="v0381">v0.3.81:</h2>
+<h4 id="bug-fixes-4">Bug fixes:</h4>
+<ul>
+<li>select: missing filter renaming in choices</li>
+</ul>
+<h2 id="v0380">v0.3.80:</h2>
+<h4 id="bug-fixes-5">Bug fixes:</h4>
+<ul>
+<li>dropdown: fix event scheduler on close</li>
+<li>select: prevent filter execution at init</li>
+</ul>
+<h2 id="v0379">v0.3.79:</h2>
+<h4 id="new-features-2">New features:</h4>
+<ul>
+<li>tooltip: allow to update the tooltip content</li>
+</ul>
+<h2 id="v0378">v0.3.78:</h2>
+<p><em>No major changes.</em></p>
+<h2 id="v0377">v0.3.77:</h2>
+<h4 id="bug-fixes-6">Bug fixes:</h4>
+<ul>
+<li>select: set select choice as a div instead of a link</li>
+</ul>
+<h2 id="v0376">v0.3.76:</h2>
+<p><em>No major changes.</em></p>
+<h2 id="v0375">v0.3.75:</h2>
+<h4 id="new-features-3">New features:</h4>
+<ul>
+<li>notification: add the ability to close with escape/return key</li>
+<li>dropdown: add the ability to close dropdown with escape key</li>
+<li>dialog: add the ability to close dropdown with escape key</li>
+<li>eventScheduler: add an event scheduler</li>
+<li>select: add custom parameter to customize select dropdown</li>
+</ul>
+<h4 id="bug-fixes-7">Bug fixes:</h4>
+<ul>
+<li>notification: always send true when discarding alert</li>
+<li>notification: blur the active element on displaying alert/confirm</li>
+<li>notification: pass the unbind argument for event scheduling</li>
+<li>dropdown: fix scroll to top on scroll end</li>
+<li>dialog: unbind scroll event on close</li>
+<li>dialog: check if dialog exists before checking scroll end</li>
+</ul>
+<h2 id="v0374">v0.3.74:</h2>
+<p><em>No major changes.</em></p>
+<h2 id="v0373">v0.3.73:</h2>
+<h4 id="bug-fixes-8">Bug fixes:</h4>
+<ul>
+<li>tabs: prefix scope variable &amp; function</li>
+<li>dropdown: prefix scope variable &amp; function</li>
+<li>dialog: prefix scope variable &amp; function</li>
+<li>select: prefix scope variable &amp; function</li>
+</ul>
+<h2 id="v0372">v0.3.72:</h2>
+<h4 id="bug-fixes-9">Bug fixes:</h4>
+<ul>
+<li>tooltip: increase z-index</li>
+</ul>
+<h2 id="v0371">v0.3.71:</h2>
+<h4 id="bug-fixes-10">Bug fixes:</h4>
+<ul>
+<li>text field: better height for textarea</li>
+</ul>
+<h2 id="v0370">v0.3.70:</h2>
+<h4 id="bug-fixes-11">Bug fixes:</h4>
+<ul>
+<li>date picker: remove console log</li>
+</ul>
+<h2 id="v0369">v0.3.69:</h2>
+<h4 id="bug-fixes-12">Bug fixes:</h4>
+<ul>
+<li>dropdown: keep the direction once open</li>
+<li>date picker: year overflowing</li>
+</ul>
+<h2 id="v0368">v0.3.68:</h2>
+<h4 id="bug-fixes-13">Bug fixes:</h4>
+<ul>
+<li>select: fix error and valid style</li>
+</ul>
+<h2 id="v0367">v0.3.67:</h2>
+<h4 id="bug-fixes-14">Bug fixes:</h4>
+<ul>
+<li>select: get error, valid and disabled states as function</li>
+</ul>
+<h2 id="v0366">v0.3.66:</h2>
+<h4 id="new-features-4">New features:</h4>
+<ul>
+<li>select: add disabled, error and valid states</li>
+</ul>
+<h4 id="bug-fixes-15">Bug fixes:</h4>
+<ul>
+<li>select: fix clear button position</li>
+<li>dropdown: fix header icon style</li>
+</ul>
+<h2 id="v0365">v0.3.65:</h2>
+<h4 id="bug-fixes-16">Bug fixes:</h4>
+<ul>
+<li>tabs: remove default color for first tab</li>
+</ul>
+<h2 id="v0364">v0.3.64:</h2>
+<h4 id="bug-fixes-17">Bug fixes:</h4>
+<ul>
+<li>tabs: add track by for tab list</li>
+</ul>
+<h2 id="v0363">v0.3.63:</h2>
+<h4 id="bug-fixes-18">Bug fixes:</h4>
+<ul>
+<li>tabs: watch activeTab attribute</li>
+<li>dialog: better scrollbar management</li>
+</ul>
+<h2 id="v0362">v0.3.62:</h2>
+<h4 id="bug-fixes-19">Bug fixes:</h4>
+<ul>
+<li>tabs: two way data binding with $parse</li>
+</ul>
+<h2 id="v0361">v0.3.61:</h2>
+<h4 id="new-features-5">New features:</h4>
+<ul>
+<li>data table: add disabled row</li>
+</ul>
+<h2 id="v0360">v0.3.60:</h2>
+<p><em>No major changes.</em></p>
+<h2 id="v0359">v0.3.59:</h2>
+<h4 id="bug-fixes-20">Bug fixes:</h4>
+<ul>
+<li>data table: finally don't use real checkbox</li>
+</ul>
+<h2 id="v0358">v0.3.58:</h2>
+<h4 id="bug-fixes-21">Bug fixes:</h4>
+<ul>
+<li>data table: fixed layout</li>
+</ul>
+<h2 id="v0357">v0.3.57:</h2>
+<h4 id="bug-fixes-22">Bug fixes:</h4>
+<ul>
+<li>data table: thead checkbox style</li>
+</ul>
+<h2 id="v0356">v0.3.56:</h2>
+<h4 id="new-features-6">New features:</h4>
+<ul>
+<li>checkbox: add standalone checkbox</li>
+</ul>
+<h4 id="bug-fixes-23">Bug fixes:</h4>
+<ul>
+<li>data table: use real checkbox</li>
+</ul>
+<h2 id="v0355">v0.3.55:</h2>
+<h4 id="bug-fixes-24">Bug fixes:</h4>
+<ul>
+<li>data table: Google guidelines style</li>
+</ul>
+<h4 id="breaking-changes-1">Breaking changes:</h4>
+<ul>
+<li>Data table markup have been completely reworked</li>
+</ul>
+<h2 id="v0354">v0.3.54:</h2>
+<h4 id="bug-fixes-25">Bug fixes:</h4>
+<ul>
+<li>icon: bad mixin label</li>
+</ul>
+<h2 id="v0353">v0.3.53:</h2>
+<h4 id="bug-fixes-26">Bug fixes:</h4>
+<ul>
+<li>button: fix css comment</li>
+</ul>
+<h2 id="v0352">v0.3.52:</h2>
+<h4 id="bug-fixes-27">Bug fixes:</h4>
+<ul>
+<li>button: fix button style</li>
+<li>text-fields: fix text-fields style</li>
+<li>dropdown: overflow only if scrollbar needed</li>
+</ul>
+<h2 id="v0351">v0.3.51:</h2>
+<h4 id="bug-fixes-28">Bug fixes:</h4>
+<ul>
+<li>select: missing annotations for minification</li>
+</ul>
+<h2 id="v0350">v0.3.50:</h2>
+<h4 id="bug-fixes-29">Bug fixes:</h4>
+<ul>
+<li>dropdown: manage resize when content changes</li>
+<li>dropdown: keep scroll position after resize</li>
+</ul>
+<h2 id="v0349">v0.3.49:</h2>
+<h4 id="bug-fixes-30">Bug fixes:</h4>
+<ul>
+<li>date-picker: clear set date to undefined</li>
+</ul>
+<h2 id="v0348">v0.3.48:</h2>
+<h4 id="bug-fixes-31">Bug fixes:</h4>
+<ul>
+<li>dialog: resize event from true size</li>
+<li>select: add missing semicolon</li>
+<li>dropdown: default dropdown link icon size</li>
+</ul>
+<h2 id="v0347">v0.3.47:</h2>
+<h4 id="new-features-7">New features:</h4>
+<ul>
+<li>select: unselect item from the selected list</li>
+<li>progress: add linear progress as directive</li>
+<li>dropdown: add dropdown link icon</li>
+<li>icon: add placeholders</li>
+</ul>
+<h2 id="v0346">v0.3.46:</h2>
+<h4 id="bug-fixes-32">Bug fixes:</h4>
+<ul>
+<li>dialog: avoid pointer exception for onclose</li>
+</ul>
+<h2 id="v0345">v0.3.45:</h2>
+<h4 id="bug-fixes-33">Bug fixes:</h4>
+<ul>
+<li>dialog: new events name</li>
+</ul>
+<h2 id="v0344">v0.3.44:</h2>
+<h4 id="new-features-8">New features:</h4>
+<ul>
+<li>dialog: add open/close broadcast event</li>
+</ul>
+<h2 id="v0343">v0.3.43:</h2>
+<h4 id="bug-fixes-34">Bug fixes:</h4>
+<ul>
+<li>date-picker: ng-if for less watchers</li>
+</ul>
+<h2 id="v0342">v0.3.42:</h2>
+<h4 id="bug-fixes-35">Bug fixes:</h4>
+<ul>
+<li>dialog : use child scope</li>
+<li>select: new DOM filter manage filter in params</li>
+<li>tabs: default value management for attrs</li>
+<li>tabs: use child scope</li>
+</ul>
+<h2 id="v0341">v0.3.41:</h2>
+<h4 id="bug-fixes-36">Bug fixes:</h4>
+<ul>
+<li>select: filter on object after angular 1.4</li>
+<li>select: remove memory leak of child scope</li>
+<li>select: use child scope</li>
+<li>dropdown: use child scope for directive</li>
+<li>dropdown: Use ng-show instead of ng-if</li>
+</ul>
+<h2 id="v0340">v0.3.40:</h2>
+<p><em>No major changes.</em></p>
+<h2 id="v0339">v0.3.39:</h2>
+<h4 id="bug-fixes-37">Bug fixes:</h4>
+<ul>
+<li>select: Default the minLength to undefined instead of 0</li>
+</ul>
+<h2 id="v0338">v0.3.38:</h2>
+<h4 id="bug-fixes-38">Bug fixes:</h4>
+<ul>
+<li>select: Duplicate ng-repeat-start instead of ng-repeat-end</li>
+</ul>
+<h2 id="v0337">v0.3.37:</h2>
+<h4 id="bug-fixes-39">Bug fixes:</h4>
+<ul>
+<li>select: Filter using the default filter only if no custom filter</li>
+</ul>
+<h2 id="v0336">v0.3.36:</h2>
+<h4 id="new-features-9">New features:</h4>
+<ul>
+<li>buttons: add disabled state in placeholder</li>
+<li>date picker: add allow clear option</li>
+</ul>
+<h2 id="v0335">v0.3.35:</h2>
+<h4 id="bug-fixes-40">Bug fixes:</h4>
+<ul>
+<li>dialog: fix dialog scrollable scrollbar position</li>
+</ul>
+<h2 id="v0334">v0.3.34:</h2>
+<h4 id="bug-fixes-41">Bug fixes:</h4>
+<ul>
+<li>dialog: prevent body scroll via css</li>
+</ul>
+<h2 id="v0333">v0.3.33:</h2>
+<h4 id="new-features-10">New features:</h4>
+<ul>
+<li>css: add margin to elements in paragraph</li>
+<li>tabs: custom tab icons</li>
+<li>tabs: show icons and headers</li>
+<li>tabs : correct classes for mdi use on pagination</li>
+<li>tabs : pagination</li>
+</ul>
+<h4 id="bug-fixes-42">Bug fixes:</h4>
+<ul>
+<li>palette: added defaults</li>
+<li>palette: add missing cyan color</li>
+</ul>
+<h4 id="breaking-changes-2">Breaking changes:</h4>
+<ul>
+<li>Your sass compiler must have an include path for your Bourbon location.</li>
+</ul>
+<h2 id="v0332">v0.3.32:</h2>
+<p><em>No major changes.</em></p>
+<h2 id="v0331">v0.3.31:</h2>
+<h4 id="bug-fixes-43">Bug fixes:</h4>
+<ul>
+<li>file input: handle input file refresh</li>
+</ul>
+<h2 id="v0330">v0.3.30:</h2>
+<h4 id="bug-fixes-44">Bug fixes:</h4>
+<ul>
+<li>file input: handle undefined value</li>
+</ul>
+<h2 id="v0329">v0.3.29:</h2>
+<h4 id="bug-fixes-45">Bug fixes:</h4>
+<ul>
+<li>dropdown: dropdown position in fixed div</li>
+</ul>
+<h2 id="v0328">v0.3.28:</h2>
+<h4 id="new-features-11">New features:</h4>
+<ul>
+<li>dialog: add auto-close &amp; onscrollend attributes</li>
+</ul>
+<h2 id="v0327">v0.3.27:</h2>
+<h4 id="new-features-12">New features:</h4>
+<ul>
+<li>button: add button variants placeholder</li>
+</ul>
+<h2 id="v0326">v0.3.26:</h2>
+<h4 id="new-features-13">New features:</h4>
+<ul>
+<li>dropdown: dropdown toggle as an element</li>
+</ul>
+<h2 id="v0325">v0.3.25:</h2>
+<h4 id="new-features-14">New features:</h4>
+<ul>
+<li>button: add button placeholder</li>
+</ul>
+<h4 id="bug-fixes-46">Bug fixes:</h4>
+<ul>
+<li>file input: trust html for label</li>
+<li>sidebar-services: remove target=&quot;_self&quot;</li>
+</ul>
+<h2 id="v0324">v0.3.24:</h2>
+<h4 id="bug-fixes-47">Bug fixes:</h4>
+<ul>
+<li>icons: change html code in sass files</li>
+</ul>
+<h2 id="v0323">v0.3.23:</h2>
+<h4 id="bug-fixes-48">Bug fixes:</h4>
+<ul>
+<li>select: placeholder as unsafe html</li>
+</ul>
+<h2 id="v0322">v0.3.22:</h2>
+<h4 id="bug-fixes-49">Bug fixes:</h4>
+<ul>
+<li>text-field: label as unsafe html</li>
+</ul>
+<h2 id="v0321">v0.3.21:</h2>
+<h4 id="bug-fixes-50">Bug fixes:</h4>
+<ul>
+<li>dialog: destroy the dialog scope when the modal is closed</li>
+<li>date-picker: watch changes on model</li>
+<li>text-field: remove border on firefox in invalid text fields</li>
+<li>select: allow field labels to contain sanitized html</li>
+<li>text-field, file-input: allow field labels to contain sanitized html</li>
+</ul>
+<h2 id="v0320">v0.3.20:</h2>
+<h4 id="bug-fixes-51">Bug fixes:</h4>
+<ul>
+<li>select: use new &quot;over-toggle&quot; from dropdown</li>
+</ul>
+<h2 id="v0319">v0.3.19:</h2>
+<h4 id="new-features-15">New features:</h4>
+<ul>
+<li>dropdown: direction automatic</li>
+</ul>
+<h2 id="v0318">v0.3.18:</h2>
+<h4 id="new-features-16">New features:</h4>
+<ul>
+<li>select: manage subheader</li>
+</ul>
+<h2 id="v0317">v0.3.17:</h2>
+<h4 id="new-features-17">New features:</h4>
+<ul>
+<li>divider: add has divider class</li>
+</ul>
+<h4 id="bug-fixes-52">Bug fixes:</h4>
+<ul>
+<li>list: put separator as pseudo element</li>
+</ul>
+<h2 id="v0316">v0.3.16:</h2>
+<p><em>No major changes.</em></p>
+<h2 id="v0315">v0.3.15:</h2>
+<h4 id="bug-fixes-53">Bug fixes:</h4>
+<ul>
+<li>select: update icons unicode</li>
+</ul>
+<h2 id="v0314">v0.3.14:</h2>
+<h4 id="new-features-18">New features:</h4>
+<ul>
+<li>flexbox: add flex-wrap attribute</li>
+<li>icons: add more size variants</li>
+<li>css core: add image rounded helper</li>
+</ul>
+<h4 id="bug-fixes-54">Bug fixes:</h4>
+<ul>
+<li>radio: update unicode after in lib update</li>
+<li>checkbox: update unicode after in lib update</li>
+</ul>
+<h4 id="breaking-changes-3">Breaking changes:</h4>
+<ul>
+<li>User should use typographic helpers to style content in content tile</li>
+<li>User should now use s flat icons in primary tile</li>
+<li>User should now use xs flat icons in secondary tile</li>
+<li>User must now use ‘img-round’ helper to apply circled effect on images</li>
+<li>in primary tile</li>
+<li>S size icons are now a little bit bigger in flat mode</li>
+</ul>
+<h2 id="v0313">v0.3.13:</h2>
+<h4 id="new-features-19">New features:</h4>
+<ul>
+<li>progress: add circular progress directive</li>
+</ul>
+<h2 id="v0312">v0.3.12:</h2>
+<h4 id="new-features-20">New features:</h4>
+<ul>
+<li>fab: click on fav and display flex</li>
+<li>date-picker: fixed label and icon features</li>
+</ul>
+<h2 id="v0311">v0.3.11:</h2>
+<p><em>No major changes.</em></p>
+<h2 id="v0310">v0.3.10:</h2>
+<h4 id="bug-fixes-55">Bug fixes:</h4>
+<ul>
+<li>data table: add nowrap attribute to header</li>
+</ul>
+<h2 id="v039">v0.3.9:</h2>
+<h4 id="bug-fixes-56">Bug fixes:</h4>
+<ul>
+<li>textarea: line height and height at init</li>
+<li>notification: applied correct position offset calculations on adding/removing notifications</li>
+</ul>
+<h2 id="v038">v0.3.8:</h2>
+<h4 id="bug-fixes-57">Bug fixes:</h4>
+<ul>
+<li>data table: add divider instead of border</li>
+</ul>
+<h2 id="v037">v0.3.7:</h2>
+<h4 id="new-features-21">New features:</h4>
+<ul>
+<li>divider: add divider object</li>
+</ul>
+<h4 id="bug-fixes-58">Bug fixes:</h4>
+<ul>
+<li>toolbar: align flex items in right area</li>
+</ul>
+<h2 id="v036">v0.3.6:</h2>
+<h4 id="new-features-22">New features:</h4>
+<ul>
+<li>date picker: observe locale attribute</li>
+</ul>
+<h2 id="v035">v0.3.5:</h2>
+<h4 id="new-features-23">New features:</h4>
+<ul>
+<li>flexbox: add flex align option</li>
+</ul>
+<h4 id="bug-fixes-59">Bug fixes:</h4>
+<ul>
+<li>select: fix icons</li>
+<li>flexbox: use percents instead of integer flex</li>
+</ul>
+<h4 id="breaking-changes-4">Breaking changes:</h4>
+<ul>
+<li>flex-order attribute is replaced by flex-item-order</li>
+<li>Buttons, dropdowns, etc were floated right into th right area. Now,</li>
+<li>with flexbox, user must invert order of elements in the DOM to be</li>
+<li>consistant.</li>
+</ul>
+<h2 id="v034">v0.3.4:</h2>
+<h4 id="bug-fixes-60">Bug fixes:</h4>
+<ul>
+<li>flexbox: deal with responsive</li>
+</ul>
+<h2 id="v033">v0.3.3:</h2>
+<h4 id="bug-fixes-61">Bug fixes:</h4>
+<ul>
+<li>bower: new main files in the json</li>
+</ul>
+<h2 id="v032">v0.3.2:</h2>
+<h4 id="new-features-24">New features:</h4>
+<ul>
+<li>date picker: year selector and locale attr</li>
+</ul>
+<h4 id="bug-fixes-62">Bug fixes:</h4>
+<ul>
+<li>date picker: enhance year selector style</li>
+<li>data table: smooth scroll on mobile</li>
+<li>gulp file: watch right js path</li>
+</ul>
+<h2 id="v031">v0.3.1:</h2>
+<h4 id="bug-fixes-63">Bug fixes:</h4>
+<ul>
+<li>icons: fix icons code after icons lib update</li>
+</ul>
+<h2 id="v030">v0.3.0:</h2>
+<h4 id="new-features-25">New features:</h4>
+<ul>
+<li>flexbox: replace grid system by flexbox</li>
+</ul>
+<h4 id="breaking-changes-5">Breaking changes:</h4>
+<ul>
+<li>Form error has been deleted</li>
+<li>Icons have changed. Please checkout documentation</li>
+<li>New paths in the dist folder: dist/lumx.css, dist/lumx.js, dist/lumx.min.js, dist/scss/_lumx.scss</li>
+<li>grid system is removed in favor of flexbox</li>
+</ul>
+<h2 id="v0254">v0.2.54:</h2>
+<h4 id="bug-fixes-64">Bug fixes:</h4>
+<ul>
+<li>thumbnail: add thumbnail class</li>
+</ul>
+<h2 id="v0253">v0.2.53:</h2>
+<h4 id="bug-fixes-65">Bug fixes:</h4>
+<ul>
+<li>file input: fix metrics</li>
+<li>dialog: fix spaces</li>
+</ul>
+<h4 id="breaking-changes-6">Breaking changes:</h4>
+<ul>
+<li>$md-spacing unit var is deprecated.</li>
+<li>$md-base-round is replaced by $base-round.</li>
+<li>$base-spacing-unit is smaller so spacing helpers are smaller.</li>
+<li>card markup has changed to be more flexible. Checkout demo.</li>
+</ul>
+<h2 id="v0252">v0.2.52:</h2>
+<h4 id="new-features-26">New features:</h4>
+<ul>
+<li>dropdown: add active class on dropdown trigger</li>
+</ul>
+<h4 id="breaking-changes-7">Breaking changes:</h4>
+<ul>
+<li>User must now use lx-thumbnail as an element, no more as an attribute.</li>
+</ul>
+<h2 id="v0251">v0.2.51:</h2>
+<h4 id="bug-fixes-66">Bug fixes:</h4>
+<ul>
+<li>date-picker: handle undefined date</li>
+<li>date-picker: ngModel always have a Date Object instead of Moment object</li>
+</ul>
+<h2 id="v0250">v0.2.50:</h2>
+<h4 id="new-features-27">New features:</h4>
+<ul>
+<li>dropdown: add a direction option allowing dropup menus</li>
+</ul>
+<h4 id="bug-fixes-67">Bug fixes:</h4>
+<ul>
+<li>grid: set outer container width to 100%</li>
+</ul>
+<h2 id="v0249">v0.2.49:</h2>
+<h4 id="new-features-28">New features:</h4>
+<ul>
+<li>project: add version number in dist files</li>
+</ul>
+<h4 id="bug-fixes-68">Bug fixes:</h4>
+<ul>
+<li>toolbar: remove margin on label</li>
+</ul>
+<h2 id="v0248">v0.2.48:</h2>
+<h4 id="bug-fixes-69">Bug fixes:</h4>
+<ul>
+<li>search-filter: theme and placeholder</li>
+<li>selects: floating label style</li>
+<li>select: missing model to ngModel rename</li>
+</ul>
+<h4 id="breaking-changes-8">Breaking changes:</h4>
+<ul>
+<li>User must switch light and dark theme.</li>
+</ul>
+<h2 id="v0247">v0.2.47:</h2>
+<h4 id="new-features-29">New features:</h4>
+<ul>
+<li>dialog: add onclose method</li>
+</ul>
+<h2 id="v0246">v0.2.46:</h2>
+<h4 id="new-features-30">New features:</h4>
+<ul>
+<li>list: add clickable row</li>
+</ul>
+<h2 id="v0245">v0.2.45:</h2>
+<h4 id="bug-fixes-70">Bug fixes:</h4>
+<ul>
+<li>dialog: transcluded content share parent scope</li>
+</ul>
+<h4 id="breaking-changes-9">Breaking changes:</h4>
+<ul>
+<li>Root element need classes (dialog dialog—l).</li>
+<li>Remove sub-directives and come back to classic div.</li>
+</ul>
+<h2 id="v0244">v0.2.44:</h2>
+<h4 id="bug-fixes-71">Bug fixes:</h4>
+<ul>
+<li>toolbar: add margin left to toolbar label</li>
+<li>tabs: remove useless indicator checking</li>
+</ul>
+<h4 id="breaking-changes-10">Breaking changes:</h4>
+<ul>
+<li>Use lx-dialog directive as an element.</li>
+<li>Use lx-dialog-header, lx-dialog-content, lx-dialog-actions directives</li>
+<li>as elements.</li>
+</ul>
+<h2 id="v0243">v0.2.43:</h2>
+<h4 id="bug-fixes-72">Bug fixes:</h4>
+<ul>
+<li>dialog: remove stopPropagation</li>
+</ul>
+<h2 id="v0242">v0.2.42:</h2>
+<h4 id="bug-fixes-73">Bug fixes:</h4>
+<ul>
+<li>icons: better sizes for icon buttons</li>
+</ul>
+<h2 id="v0241">v0.2.41:</h2>
+<h4 id="bug-fixes-74">Bug fixes:</h4>
+<ul>
+<li>dialog: remove useless log</li>
+</ul>
+<h2 id="v0240">v0.2.40:</h2>
+<ul>
+<li>fix css: bourbon path is updated according to v4</li>
+</ul>
+<h2 id="v0239">v0.2.39:</h2>
+<h4 id="bug-fixes-75">Bug fixes:</h4>
+<ul>
+<li>dialog: check dialog height with interval</li>
+<li>progress: add document global for linter</li>
+</ul>
+<h2 id="v0238">v0.2.38:</h2>
+<h4 id="bug-fixes-76">Bug fixes:</h4>
+<ul>
+<li>progress: use svg instead of animating divs</li>
+</ul>
+<h4 id="breaking-changes-11">Breaking changes:</h4>
+<ul>
+<li>LxProgressService.circular.show takes only to args: color and container</li>
+</ul>
+<h2 id="v0237">v0.2.37:</h2>
+<p><em>No major changes.</em></p>
+<h2 id="v0236">v0.2.36:</h2>
+<h4 id="bug-fixes-77">Bug fixes:</h4>
+<ul>
+<li>list: apply style only to direct children</li>
+<li>notification: alert and confirm dialog DOM</li>
+<li>notification: alert and confirm box style</li>
+</ul>
+<h2 id="v0235">v0.2.35:</h2>
+<h4 id="bug-fixes-78">Bug fixes:</h4>
+<ul>
+<li>select: Empty multiple selects now updates the model</li>
+</ul>
+<h2 id="v0234">v0.2.34:</h2>
+<h4 id="bug-fixes-79">Bug fixes:</h4>
+<ul>
+<li>select: set newSelection to false when user unselect an item</li>
+</ul>
+<h2 id="v0233">v0.2.33:</h2>
+<h4 id="bug-fixes-80">Bug fixes:</h4>
+<ul>
+<li>select: set newSelection to false when user select an item</li>
+</ul>
+<h2 id="v0232">v0.2.32:</h2>
+<h4 id="bug-fixes-81">Bug fixes:</h4>
+<ul>
+<li>dialog: watch dialog height at init</li>
+</ul>
+<h2 id="v0231">v0.2.31:</h2>
+<h4 id="breaking-changes-12">Breaking changes:</h4>
+<ul>
+<li>Toolbar label font style is not set anymore. User needs to specify</li>
+<li>typographic style (eg. fs-title).</li>
+</ul>
+<h2 id="v0230">v0.2.30:</h2>
+<h4 id="bug-fixes-82">Bug fixes:</h4>
+<ul>
+<li>select: model-to-selection/selection-to-model</li>
+</ul>
+<h2 id="v0229">v0.2.29:</h2>
+<h4 id="new-features-31">New features:</h4>
+<ul>
+<li>dialog: add scrollable behavior</li>
+</ul>
+<h4 id="breaking-changes-13">Breaking changes:</h4>
+<ul>
+<li>dialog<strong>title class is removed in favor of dialog</strong>header.</li>
+<li>dialog__header should prepend dialog instead of being inside</li>
+<li>dialog__content.</li>
+</ul>
+<h2 id="v0228">v0.2.28:</h2>
+<h4 id="bug-fixes-83">Bug fixes:</h4>
+<ul>
+<li>select: use only $modelView from ng-model</li>
+<li>dropdown: remove scope.$destroy</li>
+<li>tooltip: remove scope.$destroy</li>
+</ul>
+<h2 id="v0227">v0.2.27:</h2>
+<h4 id="bug-fixes-84">Bug fixes:</h4>
+<ul>
+<li>tabs: manage dynamic add/remove &amp; ng-repeat</li>
+<li>date-picker: improve security by removing scope binding</li>
+<li>date-picker: move isDefined checking to controller</li>
+<li>date-picker: watch the scope to handle async binding</li>
+</ul>
+<h2 id="v0226">v0.2.26:</h2>
+<h4 id="bug-fixes-85">Bug fixes:</h4>
+<ul>
+<li>selects: add default scope values</li>
+</ul>
+<h2 id="v0225">v0.2.25:</h2>
+<h4 id="bug-fixes-86">Bug fixes:</h4>
+<ul>
+<li>dropdown: remove element on scope destroy</li>
+<li>tooltip: remove element on scope destroy</li>
+<li>selects: use child scope inside the directive</li>
+</ul>
+<h4 id="breaking-changes-14">Breaking changes:</h4>
+<ul>
+<li>selects now use &quot;ng-model&quot; instead of &quot;model&quot;</li>
+</ul>
+<h2 id="v0224">v0.2.24:</h2>
+<h4 id="bug-fixes-87">Bug fixes:</h4>
+<ul>
+<li>select: better default value management</li>
+</ul>
+<h2 id="v0223">v0.2.23:</h2>
+<h4 id="new-features-32">New features:</h4>
+<ul>
+<li>scrollbar: Observe id to handle dynamics variables</li>
+<li>scrollbar: Create getter &amp; setter to watch scroll percentage</li>
+</ul>
+<h4 id="bug-fixes-88">Bug fixes:</h4>
+<ul>
+<li>notification: show alert and confirm boxes</li>
+</ul>
+<h2 id="v0222">v0.2.22:</h2>
+<h4 id="new-features-33">New features:</h4>
+<ul>
+<li>date picker: add label attribute</li>
+<li>date picker: add date picker component</li>
+</ul>
+<h4 id="bug-fixes-89">Bug fixes:</h4>
+<ul>
+<li>date picker: use moment local locale</li>
+<li>file-input: add a display block to filename</li>
+</ul>
+<h2 id="v0221">v0.2.21:</h2>
+<h4 id="bug-fixes-90">Bug fixes:</h4>
+<ul>
+<li>transclude: add array injection</li>
+<li>text fields: watch input $modelValue</li>
+<li>search filter: cancel button line height</li>
+<li>buttons: disabled style</li>
+</ul>
+<h2 id="v0220">v0.2.20:</h2>
+<h4 id="bug-fixes-91">Bug fixes:</h4>
+<ul>
+<li>tabs: better scope management in transclude</li>
+<li>tabs: update heading when scope changes</li>
+<li>dialog: emergence animation is now stable</li>
+</ul>
+<h2 id="v0219">v0.2.19:</h2>
+<h4 id="bug-fixes-92">Bug fixes:</h4>
+<ul>
+<li>select: move scope init data</li>
+</ul>
+<h2 id="v0218">v0.2.18:</h2>
+<h4 id="bug-fixes-93">Bug fixes:</h4>
+<ul>
+<li>select: null pointer for non-multiple</li>
+</ul>
+<h2 id="v0217">v0.2.17:</h2>
+<h4 id="new-features-34">New features:</h4>
+<ul>
+<li>typography: line height and letter spacing</li>
+<li>tabs: add responsive behavior</li>
+<li>tabs: add layout attribute</li>
+</ul>
+<h4 id="bug-fixes-94">Bug fixes:</h4>
+<ul>
+<li>tabs: set indicator position on window resize</li>
+</ul>
+<h4 id="breaking-changes-15">Breaking changes:</h4>
+<ul>
+<li>fs-display and fs-body variants now have a ‘-‘ to separate</li>
+<li>number. For example, fs-display4 is now fs-display-4.</li>
+</ul>
+<h2 id="v0216">v0.2.16:</h2>
+<h4 id="bug-fixes-95">Bug fixes:</h4>
+<ul>
+<li>dropdown: increment z-index for use in dialog</li>
+<li>tabs: add timeout on tab links</li>
+</ul>
+<h2 id="v0215">v0.2.15:</h2>
+<h4 id="bug-fixes-96">Bug fixes:</h4>
+<ul>
+<li>text-fields: $apply only for jquery events</li>
+</ul>
+<h2 id="v0214">v0.2.14:</h2>
+<h4 id="bug-fixes-97">Bug fixes:</h4>
+<ul>
+<li>select: scope management after dropdown fix</li>
+<li>dropdown: trasnclude to select toggle's scope</li>
+<li>text-fields: workaround HTML5 validation model</li>
+<li>text-fields: use ng-transclude again</li>
+</ul>
+<h4 id="breaking-changes-16">Breaking changes:</h4>
+<ul>
+<li>text-fields must now have their own input or textarea with ng-model</li>
+</ul>
+<h2 id="v0213">v0.2.13:</h2>
+<h4 id="new-features-35">New features:</h4>
+<ul>
+<li>transclude: add iterative parent option</li>
+</ul>
+<h4 id="bug-fixes-98">Bug fixes:</h4>
+<ul>
+<li>dropdown: &quot;grand-parent&quot; scope for transclude</li>
+</ul>
+<h2 id="v0212">v0.2.12:</h2>
+<h4 id="new-features-36">New features:</h4>
+<ul>
+<li>text-fields: fixing padding</li>
+<li>text-fields: add textarea in text fields components</li>
+</ul>
+<h4 id="bug-fixes-99">Bug fixes:</h4>
+<ul>
+<li>dropdown: stop click propagation</li>
+<li>dialog: stop click propagation</li>
+</ul>
+<h2 id="v0211">v0.2.11:</h2>
+<h4 id="new-features-37">New features:</h4>
+<ul>
+<li>selects: converter model=&gt;items &amp; vice versa</li>
+</ul>
+<h4 id="bug-fixes-100">Bug fixes:</h4>
+<ul>
+<li>selects: selected items init in the dropdown</li>
+<li>selects: indexof between objects</li>
+<li>selects: pointers between model &amp; selected</li>
+</ul>
+<h4 id="breaking-changes-17">Breaking changes:</h4>
+<ul>
+<li>selects &quot;selected&quot; is replaced by &quot;model&quot;</li>
+</ul>
+<h2 id="v0210">v0.2.10:</h2>
+<h4 id="bug-fixes-101">Bug fixes:</h4>
+<ul>
+<li>text-fields: replace &quot;name&quot; by &quot;field-name&quot;</li>
+</ul>
+<h2 id="v029">v0.2.9:</h2>
+<h4 id="bug-fixes-102">Bug fixes:</h4>
+<ul>
+<li>text-fields: manage the html name parameter</li>
+</ul>
+<h2 id="v028">v0.2.8:</h2>
+<h4 id="bug-fixes-103">Bug fixes:</h4>
+<ul>
+<li>data-table: cell padding</li>
+<li>scrollbar: use angular $window selector</li>
+<li>search filter: reset model on clear</li>
+<li>select: fix filter width</li>
+</ul>
+<h4 id="breaking-changes-18">Breaking changes:</h4>
+<ul>
+<li>the text-field directive is totally changed</li>
+</ul>
+<h2 id="v027">v0.2.7:</h2>
+<h4 id="new-features-38">New features:</h4>
+<ul>
+<li>search filter: add width and position attrs</li>
+</ul>
+<h4 id="bug-fixes-104">Bug fixes:</h4>
+<ul>
+<li>search filter: use filter-width parameter</li>
+</ul>
+<h2 id="v026">v0.2.6:</h2>
+<h4 id="new-features-39">New features:</h4>
+<ul>
+<li>tabs: tabs can have a shadow</li>
+<li>tabs: remove padding on .tabs__panes</li>
+<li>dialogs: add responsive behaviour for dialogs</li>
+</ul>
+<h4 id="bug-fixes-105">Bug fixes:</h4>
+<ul>
+<li>text-field: move the label when init with a value</li>
+<li>search-field: display the cleaning cross when reopening the field</li>
+<li>data-table: fix cells paddings and add responsive behaviour</li>
+<li>ripple: disable animation once finished</li>
+</ul>
+<h2 id="v025">v0.2.5:</h2>
+<h4 id="bug-fixes-106">Bug fixes:</h4>
+<ul>
+<li>tabs: use ng-if for hiding/showing tabs</li>
+</ul>
+<h2 id="v024">v0.2.4:</h2>
+<h4 id="bug-fixes-107">Bug fixes:</h4>
+<ul>
+<li>data table: rounded style for primary image</li>
+</ul>
+<h2 id="v023">v0.2.3:</h2>
+<h4 id="bug-fixes-108">Bug fixes:</h4>
+<ul>
+<li>scrollbar: use angular selecter instead of jQuery $</li>
+<li>scrollbar: Add Scrollbar Service</li>
+</ul>
+<h2 id="v022">v0.2.2:</h2>
+<h4 id="new-features-40">New features:</h4>
+<ul>
+<li>tabs: add links background color</li>
+<li>tabs: custom colors for tabs</li>
+<li>tabs: icons in tabs links</li>
+<li>typography: replace headings by typography</li>
+<li>data-table: add component</li>
+<li>z-depth: add z-depth classes</li>
+<li>headings: add sass vars and classes</li>
+</ul>
+<h4 id="bug-fixes-109">Bug fixes:</h4>
+<ul>
+<li>search filter: pointer cursor on search icon</li>
+</ul>
+<h2 id="v021">v0.2.1:</h2>
+<h4 id="new-features-41">New features:</h4>
+<ul>
+<li>colors: rename black and white classes</li>
+</ul>
+<h2 id="v020">v0.2.0:</h2>
+<h4 id="new-features-42">New features:</h4>
+<ul>
+<li>search-filter: add model management</li>
+<li>select: remove delete button from multiple tag</li>
+<li>select: deselection on non-multiple selects</li>
+<li>select: add hover delete for selected items in multiple</li>
+<li>select: update demo</li>
+<li>select: add loader and helpers</li>
+<li>select: link filter to callback</li>
+<li>fab: left and right direction for fab</li>
+</ul>
+<h4 id="bug-fixes-110">Bug fixes:</h4>
+<ul>
+<li>dropdown: add focus on search filter</li>
+<li>tabs: panes padding</li>
+<li>toolbar: floating elements in left/right areas</li>
+<li>fab: wrong animation with left direction</li>
+<li>select: null pointer on filter if none selected</li>
+<li>select: disable text selection on tag</li>
+</ul>
+<h2 id="v0115">v0.1.15:</h2>
+<h4 id="bug-fixes-111">Bug fixes:</h4>
+<ul>
+<li>notification: missing method from injector object</li>
+</ul>
+<h2 id="v0114">v0.1.14:</h2>
+<h4 id="new-features-43">New features:</h4>
+<ul>
+<li>tabs: change default theme and parameter name</li>
+<li>tabs: add scope variables and dark/light theme</li>
+<li>tabs: add color themes</li>
+<li>colors: add theme global colors and colors classes</li>
+<li>text-fields: add default values for parameters</li>
+<li>text-fields: dynamic value management for fixed label and valid state</li>
+<li>text-fields: fixed label and valid input state</li>
+</ul>
+<h4 id="bug-fixes-112">Bug fixes:</h4>
+<ul>
+<li>select: change width attribute</li>
+<li>notification: remove circular dependency between $compile &amp; ui-router</li>
+<li>file-input: remove &quot;change&quot; in directive binding</li>
+<li>file-input: fix jshint error</li>
+<li>file-input: fix &quot;change&quot; parameter binding</li>
+</ul>
+<h2 id="v0113">v0.1.13:</h2>
+<h4 id="bug-fixes-113">Bug fixes:</h4>
+<ul>
+<li>file-input: long filenames displayed on one line</li>
+<li>search-filter: stop propagation with multiple search in the same page</li>
+</ul>
+<h2 id="v0112">v0.1.12:</h2>
+<h4 id="new-features-44">New features:</h4>
+<ul>
+<li>search-filter: better click handlers</li>
+<li>search-filter: ergonomic improvements</li>
+<li>search-filter: create search filter component</li>
+</ul>
+<h4 id="bug-fixes-114">Bug fixes:</h4>
+<ul>
+<li>file-input: Fix indentation to the Allman style</li>
+<li>file-input: remove transclude</li>
+<li>toolbars: label margin and clearfix</li>
+</ul>
+<h2 id="v0111">v0.1.11:</h2>
+<h4 id="bug-fixes-115">Bug fixes:</h4>
+<ul>
+<li>fab: action buttons position</li>
+</ul>
+<h2 id="0110">0.1.10:</h2>
+<h4 id="bug-fixes-116">Bug fixes:</h4>
+<ul>
+<li>toolbars: fix toolbar label line height</li>
+</ul>
+<h2 id="v019">v0.1.9:</h2>
+<h4 id="bug-fixes-117">Bug fixes:</h4>
+<ul>
+<li>toolbars: padding according to buttons size</li>
+</ul>
+<h2 id="v018">v0.1.8:</h2>
+<h4 id="new-features-45">New features:</h4>
+<ul>
+<li>toolbars: add toolbar component</li>
+</ul>
+<h4 id="bug-fixes-118">Bug fixes:</h4>
+<ul>
+<li>buttons: change default sizes</li>
+<li>buttons: increase font size for icon buttons</li>
+</ul>
+<h2 id="v017">v0.1.7:</h2>
+<h4 id="new-features-46">New features:</h4>
+<ul>
+<li>colors: add new colors to default settings</li>
+<li>colors: Material design color palette with Sass</li>
+</ul>
+<h2 id="v016">v0.1.6:</h2>
+<p><em>No major changes.</em></p>
+<h2 id="v015">v0.1.5:</h2>
+<p><em>No major changes.</em></p>
+<h2 id="v014">v0.1.4:</h2>
+<h4 id="new-features-47">New features:</h4>
+<ul>
+<li>progress: create service to manage progress</li>
+<li>progress: enhance existing circular progress</li>
+</ul>
+<h4 id="bug-fixes-119">Bug fixes:</h4>
+<ul>
+<li>select: remove unselect method on elements</li>
+<li>ripple: disable pointer events</li>
+</ul>
+<h2 id="v013">v0.1.3:</h2>
+<p><em>No major changes.</em></p>
+<h2 id="v012">v0.1.2:</h2>
+<h4 id="bug-fixes-120">Bug fixes:</h4>
+<ul>
+<li>switch: Manage fast rate for click</li>
+<li>checkbox: Manage fast rate for click</li>
+</ul>
+<h2 id="v011">v0.1.1:</h2>
+<h4 id="bug-fixes-121">Bug fixes:</h4>
+<ul>
+<li>ripple: set z-index to put ripple under link</li>
+</ul>
+                </section>
+
+            </div>
+        </main>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="http://yandex.st/highlightjs/7.5/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Skimia / js-stack</title>
+
+        <link rel="stylesheet" href="http://skimia.github.io/js-stack/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://skimia.github.io/js-stack/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://skimia.github.io/js-stack/css/highlight.tomorrow-night.css">
+        <link rel="stylesheet" href="http://skimia.github.io/js-stack/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="http://skimia.github.io/js-stack/">
+                Skimia / js-stack
+                <small class="hidden-xs hidden-sm">
+                    The Starter Project for Skimia Fusion
+                </small>
+            </a>
+
+                            <a href="https://github.com/skimia/js-stack">
+                    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+                </a>
+            
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                                                    <p class="text-muted">
+                                Fusion Core
+                            </p>
+
+                            <ul class="nav nav-pills nav-stacked">
+                                                                    <li class="">
+                                        <a href="http://skimia.github.io/js-stack/docs/fusion-core/getting-started.html">
+                                            Getting started
+                                        </a>
+                                    </li>
+                                                            </ul>
+                                                    <p class="text-muted">
+                                Other topics
+                            </p>
+
+                            <ul class="nav nav-pills nav-stacked">
+                                                            </ul>
+                        
+                    </nav>
+
+                
+                <section class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h1 id="contributing-to-lumx">Contributing to lumX</h1>
+<p>We'd love for you to contribute to our source code and to make AngularJS even better than it is today! Here are the guidelines we'd like you to follow:</p>
+<ul>
+<li><a href="#code-of-conduct">Code of Conduct</a></li>
+<li><a href="#got-a-question-or-a-problem-">Got a question or a problem?</a></li>
+<li><a href="#found-an-issue-">Found an issue?</a></li>
+<li><a href="#want-a-feature-">Want a feature?</a></li>
+<li><a href="#submission-guidelines">Submission guidelines</a></li>
+<li><a href="#coding-rules">Coding rules</a></li>
+<li><a href="#git-commit-guidelines">Git commit guidelines</a></li>
+</ul>
+<h2><a name="code-of-conduct"></a> Code of Conduct</h2>
+<p>As heavy users of <a href="https://github.com/angular/angular.js">Angular</a>, we encourage you to read and follow the <a href="https://github.com/angular/code-of-conduct/blob/master/code_of_conduct.html">Angular Code of Conduct</a>.</p>
+<h2><a name="got-a-question-or-a-problem-"></a> Got a question or a problem?</h2>
+<p>If you have questions about how to use AngularJS, please direct these to <a href="http://stackoverflow.com/questions/tagged/lumx">StackOverflow</a>.</p>
+<h2><a name="found-an-issue-"></a> Found an issue?</h2>
+<p>If you find a bug in the source code or a mistake in the documentation, you can help us by submitting an issue to our <a href="https://github.com/lumapps/lumx/issues">GitHub Repository</a>. Even better you can submit a Pull Request with a fix.</p>
+<p>Please see the Submission Guidelines below.</p>
+<h2><a name="want-a-feature-"></a> Want a feature?</h2>
+<p>You can request a new feature by submitting an issue to our GitHub Repository. If you would like to implement a new feature then consider what kind of change it is, discuss it with us before hand in your issue, so that we can better coordinate our efforts, prevent duplication of work, and help you to craft the change so that it is successfully accepted into the project.</p>
+<h2><a name="submission-guidelines"></a> Submission guidelines</h2>
+<h3 id="submitting-an-issue">Submitting an issue</h3>
+<p>Before you submit your issue search the archive, maybe your question was already answered.</p>
+<p>If your issue appears to be a bug, and hasn't been reported, open a new issue. Help us to maximize the effort by not reporting duplicate issues. Providing the following information will increase the chances of your issue being dealt with quickly:</p>
+<ul>
+<li><strong>Motivation for or Use Case</strong> - explain why this is a bug for you</li>
+<li><strong>lumX Version(s)</strong> - is it a regression?</li>
+<li><strong>Browsers and Operating System</strong> - is this a problem with all browsers or only IE8?</li>
+<li><strong>Reproduce the Error</strong> - provide a live example (using <a href="http://plnkr.co/edit">Plunker</a> or <a href="http://jsfiddle.net/">JSFiddle</a>) or a unambiguous set of steps.</li>
+</ul>
+<h3 id="submitting-a-pull-request">Submitting a pull request</h3>
+<p>Before you submit your pull request consider the following guidelines:</p>
+<ul>
+<li>Search <a href="https://github.com/lumapps/lumx/pulls">GitHub</a> for an open or closed Pull Request
+that relates to your submission. You don't want to duplicate effort.</li>
+<li>Make your changes in a new git branch</li>
+</ul>
+<pre><code class="language-shell">git checkout -b my-fix-branch master</code></pre>
+<ul>
+<li>Create your patch.</li>
+<li>Follow our <a href="#rules">Coding Rules</a>.</li>
+<li>Commit your changes using a descriptive commit message that follows our
+<a href="#commit-message-format">commit message conventions</a>.</li>
+<li>Build your changes locally.</li>
+</ul>
+<pre><code class="language-shell">bower dist</code></pre>
+<ul>
+<li>Push your branch to GitHub:</li>
+</ul>
+<pre><code class="language-shell">git push origin my-fix-branch</code></pre>
+<ul>
+<li>In GitHub, send a pull request to <code>lumx:master</code>.</li>
+<li>If we suggest changes then</li>
+<li>Make the required updates.</li>
+<li>Rebase your branch and force push to your GitHub repository (this will update your Pull Request):</li>
+</ul>
+<pre><code class="language-shell">git rebase master -i
+git push -f</code></pre>
+<p>That's it! Thank you for your contribution!</p>
+<h4 id="after-your-pull-request-is-merged">After your pull request is merged</h4>
+<p>After your pull request is merged, you can safely delete your branch and pull the changes from the main (upstream) repository:</p>
+<ul>
+<li>Delete the remote branch on GitHub either through the GitHub web UI or your local shell as follows:</li>
+</ul>
+<pre><code class="language-shell">git push origin --delete my-fix-branch</code></pre>
+<ul>
+<li>Check out the master branch:</li>
+</ul>
+<pre><code class="language-shell">git checkout master -f</code></pre>
+<ul>
+<li>Delete the local branch:</li>
+</ul>
+<pre><code class="language-shell">git branch -D my-fix-branch</code></pre>
+<ul>
+<li>Update your master with the latest upstream version:</li>
+</ul>
+<pre><code class="language-shell">git pull --ff upstream master</code></pre>
+<h2><a name="coding-rules"></a> Coding rules</h2>
+<p>We're using Javascript and <a href="http://sass-lang.com/">SCSS</a> to build the framework. A <a href="http://gulpjs.com/">Gulpfile</a> is in the project to help you contribute:</p>
+<ul>
+<li><code>gulp</code> will build the project and watch for modifications.</li>
+<li><code>gulp dist</code> will update the dist folder with the last contents.</li>
+</ul>
+<p>The dist folder must be update inside your pull requests. If there is conflicts, just ignore them as the dist folder <strong>must</strong> be only the result of the generation.</p>
+<p>Our coding convention is the following:</p>
+<ul>
+<li>4 spaces for indentation, for Javascript and SCSS.</li>
+<li>Wrap all codes at 120 characters.</li>
+<li>For Javascript:</li>
+<li>Use camel-case.</li>
+<li>Use the <a href="http://en.wikipedia.org/wiki/Indent_style#Allman_style">Allman style</a>.</li>
+<li>For SCSS</li>
+<li>Except for the line wrap, please refer to <a href="http://cssguidelin.es/">the Harry Roberts css guidelines</a>.</li>
+<li>For the CSS properties, we follow the <a href="http://rhodesmill.org/brandon/2011/concentric-css/">concentric order</a></li>
+</ul>
+<h2><a name="git-commit-guidelines"></a> Git commit guidelines</h2>
+<p>We have very precise rules over how our git commit messages can be formatted.  This leads to <strong>more readable messages</strong> that are easy to follow when looking through the <strong>project history</strong>.</p>
+<h3 id="commit-message-format">Commit message format</h3>
+<p>Each commit message consists of a <strong>header</strong>, a <strong>body</strong> and a <strong>footer</strong>.  The header has a special format that includes a <strong>type</strong>, a <strong>scope</strong> and a <strong>subject</strong>:</p>
+<pre><code>&lt;type&gt; &lt;scope&gt;: &lt;subject&gt;
+&lt;BLANK LINE&gt;
+&lt;body&gt;
+&lt;BLANK LINE&gt;
+&lt;footer&gt;</code></pre>
+<p>Any line of the commit message cannot be longer 100 characters! This allows the message to be easier to read on github as well as in various git tools.</p>
+<h3 id="type">Type</h3>
+<p>Must be one of the following:</p>
+<ul>
+<li><strong>feat</strong>: A new feature</li>
+<li><strong>fix</strong>: A bug fix</li>
+<li><strong>docs</strong>: Documentation only changes</li>
+<li><strong>style</strong>: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)</li>
+<li><strong>refactor</strong>: A code change that neither fixes a bug or adds a feature</li>
+<li><strong>perf</strong>: A code change that improves performance</li>
+<li><strong>chore</strong>: Changes to the build process or auxiliary tools and libraries such as distribution generation</li>
+</ul>
+<h3 id="scope">Scope</h3>
+<p>The scope could be anything specifying place of the commit change. For example `notification', 'dropdown', etc.</p>
+<h3 id="body">Body</h3>
+<p>The body should include the motivation for the change and contrast this with previous behavior.</p>
+<h3 id="footer">Footer</h3>
+<p>The footer should contain any information about <strong>Breaking Changes</strong> and is also the place to reference GitHub issues that this commit <strong>Closes</strong>.
+The breaking changes must be at the end of the commit with only on &quot;BROKEN:&quot; before the list of breaking changes. They must be each on a new line.</p>
+<h3 id="commit-example">Commit example</h3>
+<pre><code>feat TOTO: TOTO for all
+
+Before we had to do XXX. There was this and this problem. Now, by using TOTO, it's simpler and the problems are managed.
+
+Closes PR #25
+Fix #15
+BROKEN:
+first thing broken
+second thing broken</code></pre>
+                </section>
+
+            </div>
+        </main>
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="http://yandex.st/highlightjs/7.5/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>
