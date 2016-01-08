@@ -25,6 +25,12 @@ menu:
                 getting-started:
                     text: Getting started
                     relativeUrl: docs/fusion-core/getting-started.html
+                event:
+                    text: Event service
+                    relativeUrl: docs/fusion-core/event.html
+                auth:
+                    text: Auth Service
+                    relativeUrl: docs/fusion-core/auth.html
         other:
             name: Other topics
             items:
