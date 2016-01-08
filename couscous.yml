@@ -1,0 +1,30 @@
+template:
+    url: https://github.com/skimia/Template-Dark
+
+exclude:
+    - src
+    - tests
+    - vendor
+    - gh-pages
+
+baseUrl: http://skimia.github.io/js-stack
+
+github:
+    user: skimia
+    repo: js-stack
+
+title: Skimia / js-stack
+subTitle: The Starter Project for Skimia Fusion
+
+
+menu:
+    sections:
+        fusion-core:
+            name: Fusion Core
+            items:
+                getting-started:
+                    text: Getting started
+                    relativeUrl: docs/fusion-core/getting-started.html
+        other:
+            name: Other topics
+            items:

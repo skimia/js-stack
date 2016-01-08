@@ -1,4 +1,4 @@
-# Getting started
+# Getting started with Fusion Core
 
 - Include `angular-fusion-core.js` (or `angular-fusion-core.min.js`) from the [dist](https://github.com/skimia/angular-fusion-core/tree/master/dist) directory in your `index.html`,
 - add `'fusion.core'` to your main module's list of dependencies
