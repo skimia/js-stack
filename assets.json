@@ -1,0 +1,45 @@
+{
+  "name": "js-stack",
+  "collections": {
+    "jquery": [
+      "vendors/jquery.js"
+    ],
+    "velocity": [
+      "vendors/velocity.js"
+    ],
+    "moment": [
+      "vendors/moment-with-locales.min.js"
+    ],
+    "angularjs": [
+      "jquery",
+      "node_modules/angular/angular.js"
+    ],
+    "lumx": [
+      "angularjs",
+      "velocity",
+      "moment",
+      "vendors/lumx/dist/lumx.css",
+      "vendors/lumx/dist/lumx.js"
+    ],
+    "js-data": [
+      "node_modules/js-data/dist/js-data.js"
+    ],
+    "js-data-angular": [
+      "js-data",
+      "node_modules/js-data-angular/dist/js-data-angular.js"
+    ],
+    "angular-local-storage": [
+      "vendors/angular-local-storage.js"
+    ],
+    "js-stack": [
+      "lumx",
+      "js-data-angular",
+      "angular-local-storage",
+      "css/jsstack.css",
+      "js/app.js",
+      "js/app-templates.js"
+    ]
+  },
+  "alias": "js-stack",
+  "description":"Les assets de base"
+}
